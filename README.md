@@ -4,9 +4,12 @@ Container Image for use with the Platform Registry and Cluster Configuration Man
 
 ## Tools
 
-- Ansible 2.11.x
-- Kubeseal v0.16.0 (Sealed Secrets)
-- Kustomize v4.2.0
+| Name | Version | Description |
+| :--- | :-----: | :---------- |
+| Ansible   | 2.11.x | Ansible |
+| Kubeseal  | 0.16.0 | Sealed secret management tool from bitnami. |
+| Kustomize | 4.2.0 | Kubernets manifest templating system |
+| OCP CLI   | 4.7.0-0 | OpenShift CLI from OKd |
 
 ## Usage
 

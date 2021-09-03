@@ -8,7 +8,7 @@ ENV OC_CLI_VERSON=4.7.0-0.okd-2021-08-22-163618
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /bin/tini
 ADD bin/entrypoint.sh /bin/entrypoint
 
-RUN dnf install -y git hostname jq python3 python3-pip make && \
+RUN dnf install -y git hostname jq python38 python38-pip make && \
   pip3 install --upgrade pip && \
   pip install openshift kubernetes jq pyyaml pyjwt jmespath ansible "molecule[lint]" && \
   chmod +x /bin/tini /bin/entrypoint && \

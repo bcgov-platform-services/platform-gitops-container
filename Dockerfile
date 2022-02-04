@@ -8,8 +8,8 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /bin/
 ADD bin/entrypoint.sh /bin/entrypoint
 
 RUN dnf install -y git hostname jq python38 python38-pip make && \
-  pip3 install --upgrade pip && \
-  pip install openshift kubernetes jq pyyaml pyjwt jmespath ansible "molecule[lint]" passlib && \
+  pip3.8 install --upgrade pip && \
+  pip3.8 install openshift kubernetes jq pyyaml pyjwt jmespath ansible "molecule[lint]" passlib && \
   chmod +x /bin/tini /bin/entrypoint && \
   rm -rf /var/cache/dnf
 

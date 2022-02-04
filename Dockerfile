@@ -2,7 +2,7 @@ FROM registry.redhat.io/openshift4/ose-cli:v4.8
 
 ENV TINI_VERSION=v0.19.0
 ENV KUBESEAL_VERSION=v0.16.0
-ENV KUSTOMIZE_VERSION=v4.2.0
+ENV KUSTOMIZE_VERSION=v4.5.1
 
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /bin/tini
 ADD bin/entrypoint.sh /bin/entrypoint

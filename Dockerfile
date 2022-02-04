@@ -10,7 +10,7 @@ ADD bin/entrypoint.sh /bin/entrypoint
 
 RUN dnf install -y git hostname jq python38 python38-pip make && \
   pip3 install --upgrade pip && \
-  pip install openshift kubernetes jq pyyaml pyjwt jmespath ansible "molecule[lint]" && \
+  pip install openshift kubernetes jq pyyaml pyjwt jmespath ansible "molecule[lint]" passlib && \
   chmod +x /bin/tini /bin/entrypoint && \
   rm -rf /var/cache/dnf
 

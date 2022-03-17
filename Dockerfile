@@ -6,6 +6,7 @@ ENV KUSTOMIZE_VERSION=v4.5.1
 
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /bin/tini
 ADD bin/entrypoint.sh /bin/entrypoint
+ADD ubi.repo /etc/yum.repos.d
 
 RUN dnf install -y git hostname jq python38 python38-pip make && \
   pip3.8 install --upgrade pip && \

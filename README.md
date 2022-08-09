@@ -1,3 +1,7 @@
+# This repo has moved!
+This repo has moved to the new enterprise org.  Ask your team if you think you need access.
+
+
 # platform-gitops-container
 
 Container Image for use with the Platform Registry and Cluster Configuration Manager (CCM) GitOps Pipelines

@@ -1,4 +1,4 @@
-FROM registry.redhat.io/openshift4/ose-cli:v4.8
+FROM registry.redhat.io/openshift4/ose-cli:v4.9
 
 ENV TINI_VERSION=v0.19.0
 ENV KUBESEAL_VERSION=v0.16.0
